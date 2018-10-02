@@ -3,7 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>注册页面</title>
+<<<<<<< Updated upstream
 		<script>
+=======
+		<!--<script>
+>>>>>>> Stashed changes
 			function checkForm(){
 				//alert("aa");
 				/**校验用户名*/
@@ -38,6 +42,43 @@
 				}
 				
 			}
+<<<<<<< Updated upstream
+=======
+		</script>-->
+		
+		<script>
+			/*function showTips(){
+				document.getElementById("userspan").innerHTML="<font color='gray'>用户名必填！</font>";
+			}
+			
+			
+			function checkUser(){
+				//1.获取用户输入的用户名数据
+				var uValue = document.getElementById("user").value;
+				//2.进行校验
+				if(uValue==""){
+					document.getElementById("userspan").innerHTML="<font color='red'>用户名不能为空!</font>";
+				}else{
+					document.getElementById("userspan").innerHTML="";
+				}
+			}*/
+			
+			function showTips(id,info){
+				document.getElementById(id+"span").innerHTML="<font color='gray'>"+info+"</font>";
+			}
+			
+			
+			function check(id,info){
+				//1.获取用户输入的用户名数据
+				var uValue = document.getElementById(id).value;
+				//2.进行校验
+				if(uValue==""){
+					document.getElementById(id+"span").innerHTML="<font color='red'>"+info+"</font>";
+				}else{
+					document.getElementById(id+"span").innerHTML="";
+				}
+			}
+>>>>>>> Stashed changes
 		</script>
 	</head>
 	<body>
@@ -100,7 +141,11 @@
 									用户名
 								</td>
 								<td>
+<<<<<<< Updated upstream
 									<input type="text" name="user" size="34px" id="user"/>
+=======
+									<input type="text" name="user" size="34px" id="user" onfocus="showTips('user','用户名必填！')" onblur="check('user','用户名不能为空！')"/><span id="userspan"></span>
+>>>>>>> Stashed changes
 								</td>
 							</tr>
 							<tr>
@@ -108,7 +153,11 @@
 									密码
 								</td>
 								<td>
+<<<<<<< Updated upstream
 									<input type="password" name="password" size="34px" id="password"/>
+=======
+									<input type="password" name="password" size="34px" id="password" onfocus="showTips('password','密码必填')" onblur="check('password','密码不能为空!')"/><span id="passwordspan"></span>
+>>>>>>> Stashed changes
 								</td>
 							</tr>
 							<tr>
@@ -158,7 +207,7 @@
 								</td>
 								<td>
 									<input type="text" name="yzm" />
-									<img src="img/yanzhengma.png" />
+									<img src="../img/yanzhengma.png" />
 								</td>
 							</tr>
 							<tr>

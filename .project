@@ -25,7 +25,11 @@
 			</matcher>
 		</filter>
 		<filter>
+<<<<<<< Updated upstream
 			<id>1537978116097</id>
+=======
+			<id>1538476940190</id>
+>>>>>>> Stashed changes
 			<name></name>
 			<type>26</type>
 			<matcher>
